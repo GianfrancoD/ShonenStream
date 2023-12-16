@@ -8,10 +8,10 @@
 
 ## Checklist
 
-- [x] new feature/ nueva tarea realizada
-- [x] Documentación actualizada 
-- [x] Se realizo un test
-- [x] los test estan correctos
+- [x] 📖 new feature/ nueva tarea realizada
+- [x] 📚 Documentación actualizada 
+- [x] 📑 Se realizo un test
+- [x] 📄 los test estan correctos
 
 ## Notas
 
