@@ -73,7 +73,8 @@ header{
 /* CSS del FOOTER */
 
 footer ul li {
-    display: flex;
+    display: grid;
     justify-content: center;
+    padding: 5px;
    
 }
