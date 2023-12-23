@@ -123,6 +123,13 @@ header{
     }
 }
 
+/* Main */
+.page-main{
+  display: grid;
+  width: 100%;
+  grid-template-columns: 400px auto;
+}
+
 
 
 /* CSS del FOOTER */
@@ -133,3 +140,4 @@ footer ul li {
     padding: 5px;
    
 }
+
