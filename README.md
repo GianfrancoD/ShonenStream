@@ -1,5 +1,5 @@
-# Shonenstream
+# Shonenstream 🥳
 
-### it´s one app the movie the anime
+### It´s an anime application 🖥️
 
-#### Welcome to Home
+#### Welcome to Home 🏡
