@@ -148,10 +148,22 @@ header{
 
 /* CSS del FOOTER */
 
-footer ul li {
+footer{
     display: grid;
+    margin-top: 100%;
     justify-content: center;
-    padding: 5px;
-   
+
+    background-color: rgb(110, 110, 110);
+    
+    & li{
+        list-style: none;
+        padding: 2px;
+    }
+    & a{
+        text-decoration: none;
+    }
 }
+   
+
+
 
