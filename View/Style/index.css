@@ -3,162 +3,153 @@
     padding:0;
 }
 
-/* Titulo y eslogan */
-.classAlltitle{
-    padding: 10px;
-    /*width: 100%;*/
-    height: 100%;
-    background: #f33a62;
-    & h1, h3{
-        text-align: center;
-        padding: 10px;
-        color:white;
-        text-shadow: 0px 0px 7px #fff;
-    }
+:root{
+    --menu:#ff0000;
 }
 
-/* CSS del DIV */
-header{
-    width: 100%;
-    height: auto;
-    /* CSS de logo */
-    .logo{
+.logo{
+    display:grid;
+    place-items: center center;
+    background: var(--menu);
+}
+
+/*Menu*/
+.container{
+    display: grid;
+    height: 100% !important;
+    /*ROWS y COLUMNS*/
+    /*grid-template: repeat(3, 1fr) / repeat(4, 1fr);*/
+    > header{
+        background: red;
+        width: 100%;
+        color:white;
         display: grid;
-        justify-items: center;
-        cursor:pointer;
+        grid-column: 2/3;
     }
-    > h1{
-        color:red;
+    .Menu1{
+        width: 100%;
         text-align: center;
-        text-transform: uppercase;
-    }
-    /*CSS del nav y menu*/
-    .header-principal{
-        display:grid;
-        grid-template-columns: repeat(4, minmax(400px, auto));
-        grid-gap: 0px;
-        > * {
-            color: #353535;
-            font-size: 1.2em;
-            line-height: 1.5;
-            padding: 20px;
-            background: #eb2952;
-        }
-        > nav {
-            display: grid;
-            align-content: center;
-            justify-content: center;
-            & ul {
-                list-style: none;
-                display: grid;
-                grid-template-columns: auto auto auto;
-                justify-items: center;
-                gap: 7px;
+        margin: 10px;
+        display: grid;
+        align-items: center;
+        margin:0;
+        & li {
+            display: inline-grid;
+            width: 110px;
+            height: auto !important;
+            border: 2px solid black !important;
+            border-radius: 15%;
+            background: var(--menu);
+            cursor:pointer !important;
             }
-            & li{
-                display: grid;
-                justify-content: center;
-                width: 120px;
-                height: auto !important;
-                border: 2px solid black !important;
-                border-radius: 15%;
-                background: #ff0000;
-                cursor:pointer !important;
-            }
-            
             & a {
                 color: #f1f0f0;
                 text-decoration:none;
             }
-
             & a:hover{
                 color: white;
                 text-shadow: 0px 0px 7px #fff;
-            } 
-        }
-
-        /* CSS de Search */
-        .search1{
+            }
+         & .search1{
             display: grid;
-            align-content: center;
-            justify-content: center;
-            .input{
-                width: 300px;
-                height: 30px;
-                border-radius: 10px;
-                background: transparent;
-                border: solid 1px #eee;
-                color: #eee;
-            }
-            .input:hover{
-                background: #f01947;
-                border: solid 2px white;
-            }
-            .buttom_seach{
-                width: 50px;
-                height: 50px;
-                border-radius: 10px;
-                background: transparent;
-                border: solid 1px #eee;
-                color:white;
-                cursor:pointer;
-            }
-            .buttom_seach:hover{
-                background: white;
-                color: #eb2952;
-            }
-            & i{
-                font-size: 20px;
-            }
-        }
-
-        /* Boton de login */
-        .contenedor{
-            width: 50%;
-            height: auto;
-            display: grid;
-            justify-content: center;
-            align-content: center;
-            .butonl{
-               width: 110px;
-               height: 50px;
-               border: #fff solid 1px;
-               background: transparent;
-               border-radius: 7%;
-               color:#fff;
-               font-size: 20px;
-               cursor:pointer;
-            }
-            .butonl:hover{
-                background: #fff;
-                color: #eb2952
-            }
-        }
+            grid-column: 3/4;
+        }        
     }
-}
 
-/* Main */
-.page-main{
-  display: grid;
-  width: 100%;
-  grid-template-columns: 400px auto;
-}
-
-
-
-/* CSS del FOOTER */
-
-footer{
+/*LOGIN*/
+.contenedor{
     display: grid;
-    margin-top: 100%;
-    justify-content: center;
-    background-color: rgb(110, 110, 110);
-    width: 100%;
-    & li{
-        list-style: none;
-        padding: 2px;
+    place-content: center center;
+    background: var(--menu);
+    .butonl{
+        width: 130px;
+        height: 35px;
+        border-radius: 7%;
+        background: transparent;
+        border: solid 1px #eee;
+        color:white;
+        cursor:pointer;
+        text-shadow: 0px 0px 3px #fff;
+        background: transparent;
+        font-size: 17px;
     }
-    & a{
-        text-decoration: none;
+    .butonl:hover{
+        background: #fff;
+        color: #eb2952;
+    }
+}
+
+/*SEARCH*/
+.search1{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    background: var(--menu);
+    .input{
+        width: 300px;
+        height: 30px;
+        border-radius: 10px;
+        background: transparent;
+        border: solid 1px #eee;
+        color: #eee;
+    }
+    .input:hover{
+        background: #f01947;
+        border: solid 2px white;
+    }
+    .buttom_seach{
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+        background: transparent;
+        border: solid 1px #eee;
+        color:white;
+        cursor:pointer;
+    }
+    .buttom_seach:hover{
+        background: white;
+        color: #eb2952;
+    }
+    & i{
+        font-size: 20px;
+    }
+}
+
+/*OTRAS SECCIONES*/
+    .sidebar{
+        background: black;
+        width: 100%;
+        color:white;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        grid-row: 2 / 3;
+    }
+    > section {
+        width: 100%;
+        color:white;
+        display: grid;
+        place-items: center center;
+        grid-row: 2/3;
+        grid-column: 2/5;
+        place-content: stretch;
+            /*ROWS y COLUMNS*/
+        grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+        & article{
+            display: grid;
+            border: 1px solid black;
+            width: 100%;
+            height: 100px;
+        }
+    }
+
+    > footer{
+        background: blanchedalmond;
+        width: 100%;
+        color:white;
+        display: grid;
+        place-content: center;
+        place-items: center;
+        grid-column: 1 / 4 span;
     }
 }

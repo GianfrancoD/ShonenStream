@@ -14,96 +14,73 @@
     <link rel="mask-icon" href="/View/favicon.ico" color="#226DAA" />
     <title>ShonenStream</title>
     <!-- Se modifico la etiqueta link de CSS como la de JS-->
-    <link rel="stylesheet" href="../View/Style/index.css">
+    <link rel="stylesheet" href="index.css">
     <script src="../View/js/index.js"></script>
     <script src="https://kit.fontawesome.com/075f4952e7.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <div class="container">
+        <picture class="logo">
+            <img src="photo_2023-12-141_ww18-59-52.png" width="100px" height="90px" alt="">
+        </picture>
 
-    <header>
-        <div class="header-principal">
-            <picture class="logo">
-                <img class="imagen" src="../View/asset/img/photo_2023-12-141_ww18-59-52.png" height="90px" width="auto"
-                    alt="Logo ShonenStream en letras geniales" onclick="alert('AUCH!')">
-            </picture>
-
+        <header>
             <nav class="Menu1" role="navegation">
                 <ul class="ul">
-                    <!-- se modifico la etiqueta l1 y se cambio por li y se le añadio la etiqueta A-->
                     <li><a href="#">Inicio</a></li>
                     <li><a href="#">Lista de Anime</a></li>
                     <li><a href="#">Noticias</a></li>
                 </ul>
             </nav>
+        </header>
 
-            <div class="search1">
-                <!-- estaba </form> y se creo la apertura-->
-                <form action="">
-                    <input type="text" placeholder="Search Courses..." name="search" class="input">
-                    <button class="buttom_seach">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
-                </form>
-            </div>
-
-            <div class="contenedor">
-                <button class="butonl" onclick="alert('Login')">Login</button>
-            </div>
-
-
+        <!-- SEARCH -->
+        <div class="search1">
+            <form action="">
+                <input type="text" placeholder="Search Courses..." name="search" class="input">
+                <button class="buttom_seach">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
         </div>
-    </header>
 
-    <!-- Titulo y eslogan -->
-    <div class="classAlltitle">
-        <h1 class="Title-principal">ShonenStream</h1>
-        <h3 class="Eslogan">¡Sumérgete en un Universo Shonen: Tu Fuente Épica de Anime en ShonenStream!</h3>
+        <!--LOGIN-->
+        <div class="contenedor">
+            <button class="butonl" onclick="alert('Login')">Login</button>
+        </div>
+
+        <aside class="sidebar">aside</aside>
+
+        <section>
+            <article style="color:black">
+                <div>pruebas</div>
+            </article>
+        </section>
+        
+        <footer>
+            <div class="footer">
+                <ul>
+                    <li>
+                        <a href="">Calendario de lanzamientos</a>
+                    </li>
+                    <li>
+                        <a href="">Ranking de popularidad</a>
+                    </li>
+                    <li>
+                        <a href="">Encuestas y sugerencias</a>
+                    </li>
+                    <li>
+                        <a href=""></a>
+                    </li>
+                    <li>
+                        <a class="fa fa-instagram" href=""></a>
+                        <a class="fa fa-facebook" href=""></a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
     </div>
-    
-
-    <!-- Main de aside/galeria(article)-->
-    <main class="page-main">
-        <aside>Aside</aside>
-        <section>
-            <article>article</article>
-            <article>article</article>
-        </section>
-        <hr>
-        <hr>
-        <section>
-        </section>
-    </main>
-
-
-    <!-- Footer de paginas -->
-    <footer>
-        <div class="footer">
-
-            <ul>
-                <li>
-
-                    <a href="">Calendario de lanzamientos</a>
-                </li>
-                <li>
-                    <a href="">Ranking de popularidad</a>
-                </li>
-                <li>
-                    <a href="">Encuestas y sugerencias</a>
-                </li>
-                <li>
-                    <a href=""></a>
-                </li>
-                <li>
-                    <a class="fa fa-instagram" href=""></a>
-                    <a class="fa fa-facebook" href=""></a>
-
-                </li>
-            </ul>
-
-        </div>
-    </footer>
-
 </body>
 
 </html>
