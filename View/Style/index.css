@@ -17,8 +17,6 @@
 .container{
     display: grid;
     height: 100% !important;
-    /*ROWS y COLUMNS*/
-    /*grid-template: repeat(3, 1fr) / repeat(4, 1fr);*/
     > header{
         background: red;
         width: 100%;
