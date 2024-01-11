@@ -81,8 +81,7 @@
 /*SEARCH*/
 .search1{
     display: grid;
-    align-content: center;
-    justify-content: center;
+    place-content: center center;
     background: var(--menu);
     .input{
         width: 300px;
@@ -120,11 +119,10 @@
         width: 100%;
         color:white;
         display: grid;
-        align-items: center;
-        justify-items: center;
+        place-items: center center;
         grid-row: 2 / 3 span;
     }
-    
+
     /* CSS de Carrusel*/
     .swiffy-slider{
         display: grid;
@@ -244,8 +242,11 @@
         width: 80px !important;
         height: 50px !important;
     }
-    .Menu1{
-        grid-column: 2/ 4 span;
+    
+
+    .contenedor{
+        display: grid;
+        grid-column:5/ 4;
     }
 
     /* IMPORTANTE VER ESTO PARA EL ASIDE*/
