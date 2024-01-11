@@ -218,7 +218,15 @@
 }
 
 /* MEDIA QUERY (RESPONSIVE)*/
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 1100px) {
+.container{
+    >header {
+        display: grid;
+        grid-column: 2/4;
+    }
+    .search1{
+        display: none;
+    }
     .article{
         .action{
             display: none;
@@ -256,10 +264,10 @@
         grid-template-rows: repeat(2,1fr);
     }
   }
-
+}
 
 /*ELECCION DE ESTRELLAS*/
-  #form {
+#form {
     width: 250px;
     margin: 0 auto;
     height: 50px;
@@ -278,7 +286,7 @@
   }
   
   label {
-    color: rgb(172, 169, 169);
+    color: grey;
   }
   
   .clasificacion {
