@@ -150,7 +150,7 @@
         & article{
             display: grid;
             width: 100%;
-            height: 320px;
+            /*height: 320px;*/
             color:red;
         }
         & .article{
