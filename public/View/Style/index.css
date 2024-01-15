@@ -26,14 +26,21 @@
         grid-column: 2/3;
     }
     .Menu1{
-        width: 100%;
-        text-align: center;
-        margin: 10px;
         display: grid;
-        align-items: center;
+        width: 100%;
         margin:0;
+        margin: 10px;
+        text-align: center;
+        align-items: center;
+        & ul {
+            display: flex;
+            place-items: center center;
+            place-content: center center;
+            gap: 10px 10px;
+            list-style: none;
+        }
         & li {
-            display: inline-grid;
+            /*display: inline-grid;*/
             width: 110px;
             height: auto !important;
             border: 2px solid black !important;
@@ -211,12 +218,11 @@
         color:white;
         display:grid;
         place-content: center center;
-        /*grid-template: repeat(1, 1fr)/repeat(2,1fr);*/
-        grid-column: 1 / 5;
+        grid-column: 1 / 5; /* NO TOCAR */
         height: 60px;
         & ul{
             display: flex;
-            place-content: center center;
+            place-items: center center;
             gap: 10px 10px;
             & li {
                 list-style: none;
