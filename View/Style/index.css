@@ -216,7 +216,7 @@
         height: 60px;
         & ul{
             display: flex;
-            place-content: center center;
+            place-items: center center;
             gap: 10px 10px;
             & li {
                 list-style: none;
