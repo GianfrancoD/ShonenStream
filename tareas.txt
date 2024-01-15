@@ -1,8 +1,0 @@
-Crear 3 archivos en la carpeta view y poner sus modificaciones.
-
-- carpeta view
--- index.html
--- index.css
--- index.js
-
-por cada archivo añadirles sus determinadas modificaciones.
