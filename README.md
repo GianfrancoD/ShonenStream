@@ -1,5 +1,5 @@
 # Shonenstream 🥳
 
-### It´s an anime application 🖥️
+### Aplicacion web de Series de animes 🖥️
 
-#### Welcome to Home 🏡
+#### Bienvenidos a tu espacio de anime 🏡
