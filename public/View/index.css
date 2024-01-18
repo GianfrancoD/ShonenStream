@@ -122,12 +122,37 @@
 
 /*OTRAS SECCIONES*/
     .sidebar{
-        background: black;
+        background: linear-gradient(to right, #000 0%, #fff 100%);
         width: 100%;
         color:white;
         display: grid;
-        place-items: center center;
+        place-items: center start;
         grid-row: 2 / 3 span;
+        grid-template: repeat(1,1fr)/auto;
+        &nav{
+        display: grid;
+        grid-template: repeat(2,1fr)/repeat(1,1fr);
+        }
+        & li{
+            background: var(--menu);
+            border: 1px solid black;
+            border-radius: 7px;
+            width: 140%;
+            height: 25px !important;
+            list-style: none;
+            color:var(--footer);
+            text-align: center;
+            display: grid !important;
+            margin: 2px;
+            cursor: pointer;
+            & a{
+                text-decoration: none;
+                margin: auto;
+            }
+        }
+        
+        
+        
     }
 
     /* CSS de Carrusel*/
